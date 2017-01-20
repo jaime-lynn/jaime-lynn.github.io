@@ -1,7 +1,16 @@
+@media (max-width: 768px) {
+    body {
+        background-position-x: center;
+    }
+}
+@media (min-width: 769px) {
+    body {
+        background-size: cover;
+    }
+}
 body {
     padding-top: 20px;
     background-image: url("Optimized-trees.jpg");
-    background-size: cover;
     background-attachment: fixed;
 }
 .navbar-custom {
