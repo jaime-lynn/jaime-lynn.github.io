@@ -13,6 +13,86 @@ body {
     background-image: url("Optimized-trees.jpg");
     background-attachment: fixed;
 }
+	.animate {
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		-ms-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+	}
+	.info-card {
+		width: 100%;
+		border: 1px solid rgb(215, 215, 215);
+		position: relative;
+        font-family: "Playfair Display", serif;
+		margin-bottom: 20px;
+		overflow: hidden;
+	}
+	.info-card > img {
+		width: 100px;
+		margin-bottom: 43px;
+	}
+	.info-card .info-card-details,
+	.info-card .info-card-details .info-card-header  {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		bottom: -100%;
+		left: 0;
+		padding: 0 15px;
+		background: rgb(255, 255, 255);
+		text-align: center;
+	}
+	.info-card .info-card-details::-webkit-scrollbar {
+		width: 8px;
+	}
+	.info-card .info-card-details::-webkit-scrollbar-button {
+		width: 8px;
+		height: 0px;
+	}
+	.info-card .info-card-details::-webkit-scrollbar-track {
+		background: transparent;
+	}
+	.info-card .info-card-details::-webkit-scrollbar-thumb {
+		background: rgb(160, 160, 160);
+	}
+	.info-card .info-card-details::-webkit-scrollbar-thumb:hover {
+		background: rgb(130, 130, 130);
+	}           
+
+	.info-card .info-card-details .info-card-header {
+		height: auto;		
+		bottom: 100%;
+		padding: 10px 5px;
+	}
+	.info-card:hover .info-card-details {
+		bottom: 0px;
+		overflow: auto;
+		padding-bottom: 25px;
+	}
+	.info-card:hover .info-card-details .info-card-header {
+		position: relative;
+		bottom: 0px;
+		padding-top: 45px;
+		padding-bottom: 25px;
+	}
+	.info-card .info-card-details .info-card-header h1,	
+	.info-card .info-card-details .info-card-header h3 {
+		color: rgb(62, 62, 62);
+        font-family: "Playfair Display", serif;
+		font-size: 22px;
+		font-weight: 900;
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+    .info-card-details a {
+        color: #000000;
+    }
+    .info-card-details a:hover {
+        text-decoration: none;
+        letter-spacing: 2px;
+        color: #9d9d9d;
+    }
 .navbar-custom {
     background: none;
     border: none;
@@ -111,7 +191,10 @@ progress[value] {
 }
 progress[value]::-webkit-progress-value {
   background-image:
-
+  
+	   -webkit-linear-gradient(-45deg, 
+	                           transparent 33%, rgba(0, 0, 0, .1) 33%, 
+	                           rgba(0,0, 0, .1) 66%, transparent 66%),
 	   -webkit-linear-gradient(top, 
 	                           rgba(255, 255, 255, .25), 
 	                           rgba(0, 0, 0, .25)),
@@ -122,7 +205,13 @@ progress[value]::-webkit-progress-value {
 }
 progress[value]::-moz-progress-bar { 
   background-image:
-
+    -moz-linear-gradient(
+      135deg, 
+      transparent 33%, 
+      rgba(0, 0, 0, 0.1) 33%, 
+      rgba(0, 0, 0, 0.1) 66%, 
+      transparent 66% 
+    ),
     -moz-linear-gradient(
       top, 
       rgba(255, 255, 255, 0.25), 
@@ -132,7 +221,7 @@ progress[value]::-moz-progress-bar {
       left, 
       #e96443, 
       #904e95
-    );
+          );
 
   border-radius: 2px; 
   background-size: 35px 20px, 100% 100%, 100% 100%; 
