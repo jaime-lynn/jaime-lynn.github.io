@@ -24,7 +24,7 @@ body {
 		width: 100%;
 		border: 1px solid rgb(215, 215, 215);
 		position: relative;
-        font-family: "Playfair Display", serif;
+        font-family: "Roboto", sans-serif;
 		margin-bottom: 20px;
 		overflow: hidden;
 	}
@@ -79,7 +79,7 @@ body {
 	.info-card .info-card-details .info-card-header h1,	
 	.info-card .info-card-details .info-card-header h3 {
 		color: rgb(62, 62, 62);
-        font-family: "Playfair Display", serif;
+        font-family: "Roboto", sans-serif;
 		font-size: 22px;
 		font-weight: 900;
 		margin: 0 !important;
@@ -96,7 +96,7 @@ body {
 .navbar-custom {
     background: none;
     border: none;
-    font-family: "Playfair Display", serif;
+    font-family: "Roboto", sans-serif;
     color: white; 
 }
 .navbar-custom a.text-white:hover, .navbar-custom .navbar-right a.text-white:hover {
@@ -129,7 +129,7 @@ body {
     background-color: rgba(195, 195, 195, 0.3);
 }
 .text-playfair {
-    font-family: "Playfair Display", serif;
+    font-family: "Roboto", sans-serif;
 }
 .text-white {
     color: white;
